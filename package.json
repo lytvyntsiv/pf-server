@@ -1,8 +1,7 @@
 {
-  "name": "node-express-starter-2022",
+  "name": "pokemon-fight-api",
   "version": "1.0.1",
-  "description": "A node and express starter template for 2023",
-  "author": "Carter Adams <carteradams@gmail.com>",
+  "description": "Pockemon rest / websoket api",
   "license": "MIT-0",
   "private": false,
   "main": "dist/index.js",
