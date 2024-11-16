@@ -1,4 +1,4 @@
-import { WebSocketServer } from "ws";
+import { Server } from "ws";
 
 class SocketClient {
   constructor() {
@@ -6,12 +6,12 @@ class SocketClient {
     this.clients = new Map();
   }
 
-  connect(dispatchEventsHandler) {
+  connect(dispatchEventsHandler, server) {
     if (this.ws) {
       return this.ws;
     }
 
-    this.ws = new WebSocketServer({ port: 3005 });
+    this.ws = new Server({ server });
 
     this.ws.on("connection", (ws) => {
       ws.on("message", (message) => {
